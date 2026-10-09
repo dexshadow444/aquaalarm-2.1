@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7fafb;
+  --foreground: #0d2f40;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* AquaAlarm civic-tech palette */
+  --color-abyss: #0a2a38;
+  --color-ink: #0d2f40;
+  --color-deep: #11576e;
+  --color-ocean: #0e7c86;
+  --color-aqua: #3aa7b6;
+  --color-foam: #dff0f4;
+  --color-mist: #eef6f8;
+  --color-surface: #f7fafb;
+  --color-line: #d9e6ea;
+
+  --color-green: #1a7f4b;
+  --color-greenbg: #dff2e7;
+  --color-amber: #b45309;
+  --color-amberbg: #fdf0d9;
+  --color-red: #c0392b;
+  --color-redbg: #fbe4e1;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Calm, data-dense civic UI */
+::selection {
+  background: #3aa7b6;
+  color: #fff;
+}
+
+select,
+button {
+  cursor: pointer;
+}
